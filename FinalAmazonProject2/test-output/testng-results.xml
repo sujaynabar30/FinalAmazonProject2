@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="140257" started-at="2018-09-03T16:22:36Z" finished-at="2018-09-03T16:24:57Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="140257" started-at="2018-09-03T16:22:36Z" finished-at="2018-09-03T16:24:57Z">
+      <class name="com.amazon.testcases.AmazonMain">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.amazon.testcases.AmazonMain@1bce4f0a]" name="beforeTest" is-config="true" duration-ms="27240" started-at="2018-09-03T16:22:36Z" finished-at="2018-09-03T16:23:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="verifylogin()[pri:0, instance:com.amazon.testcases.AmazonMain@1bce4f0a]" name="verifylogin" duration-ms="25208" started-at="2018-09-03T16:23:04Z" finished-at="2018-09-03T16:23:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifylogin -->
+        <test-method status="PASS" signature="proudctPage(java.lang.String)[pri:0, instance:com.amazon.testcases.AmazonMain@1bce4f0a]" name="proudctPage" duration-ms="22021" started-at="2018-09-03T16:23:29Z" data-provider="SearchProvider" depends-on-methods="com.amazon.testcases.AmazonMain.verifylogin" finished-at="2018-09-03T16:23:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Three Thousand Stitches: Ordinary People, Extraordinary Lives]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- proudctPage -->
+        <test-method status="PASS" signature="proudctPage(java.lang.String)[pri:0, instance:com.amazon.testcases.AmazonMain@1bce4f0a]" name="proudctPage" duration-ms="15269" started-at="2018-09-03T16:23:51Z" data-provider="SearchProvider" depends-on-methods="com.amazon.testcases.AmazonMain.verifylogin" finished-at="2018-09-03T16:24:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[The Dhoni Touch: Unravelling the Enigma That Is Mahendra Singh Dhoni]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- proudctPage -->
+        <test-method status="PASS" signature="productDelete()[pri:0, instance:com.amazon.testcases.AmazonMain@1bce4f0a]" name="productDelete" duration-ms="14156" started-at="2018-09-03T16:24:06Z" depends-on-methods="com.amazon.testcases.AmazonMain.proudctPage" finished-at="2018-09-03T16:24:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productDelete -->
+        <test-method status="PASS" signature="mousehover()[pri:0, instance:com.amazon.testcases.AmazonMain@1bce4f0a]" name="mousehover" duration-ms="35109" started-at="2018-09-03T16:24:20Z" depends-on-methods="com.amazon.testcases.AmazonMain.productDelete" finished-at="2018-09-03T16:24:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mousehover -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.amazon.testcases.AmazonMain@1bce4f0a]" name="afterTest" is-config="true" duration-ms="1175" started-at="2018-09-03T16:24:55Z" finished-at="2018-09-03T16:24:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.amazon.testcases.AmazonMain -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
