@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-import com.amazon.pages.LoginPage;
+import com.amazon.pageobjectmodel.LoginPage;
 
 /**
  * 
@@ -35,12 +35,14 @@ public class VerifyAmazonLogin {
 		login_page.loginToAmazon(username, pass); 				  // call the method (this will call all the login elements)
 
 		WebElement verify = driver.findElement(By.xpath("//*[@id=\"nav-link-yourAccount\"]/span[1]"));
-		String check = verify.getText();
-
-		if (check.equals("Hello, NABAR")) {
-			System.out.println("Logged in Sucessfully");
+		String check = verify.getText();											//get text of the sign in username
+		
+		Assert.assertEquals(check, "Hello, NABAR");
+		
+		if (check.equals("Hello, NABAR")) {							//if cond. is true it will print
+			System.out.println("----Logged in Sucessfully----");
 		} else {
-			System.out.println("Login failed.....Closing Browser");
+			System.out.println("!!!!Login failed.....Closing Browser");
 			driver.close();
 		}
 	}

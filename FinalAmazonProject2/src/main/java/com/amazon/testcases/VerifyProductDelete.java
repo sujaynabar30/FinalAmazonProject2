@@ -3,7 +3,7 @@ package com.amazon.testcases;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-import com.amazon.pages.ProductDeletePage;
+import com.amazon.pageobjectmodel.ProductDeletePage;
 
 /**
  * 

@@ -1,4 +1,4 @@
-package com.amazon.pages;
+package com.amazon.pageobjectmodel;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,37 +13,6 @@ import org.openqa.selenium.support.FindBy;
  */
 
 public class LoginPage {
-	
-	/*WebDriver driver;
-	
-	By email = By.id("ap_email");
-	By pwd = By.id("ap_password");
-	By loginButton = By.id("signInSubmit");
-	By AmazonCart = By.id("nav-link-yourAccount");
-	
-	public LoginPage(WebDriver driver) {
-		this.driver = driver;
-	}
-	
-	public void typeEmail()
-	{
-		driver.findElement(email).sendKeys("sujaynabar30@gmail.com");
-	}
-	
-	public void typePassword()
-	{
-		driver.findElement(pwd).sendKeys("mangirish");
-	}
-	
-	public void clickLogin()
-	{
-		driver.findElement(loginButton).click();
-	}
-	
-	public void clickCart()
-	{
-		driver.findElement(AmazonCart).click();
-	}*/
 	
 	WebDriver driver;
 	

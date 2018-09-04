@@ -1,4 +1,4 @@
-package com.amazon.pages;
+package com.amazon.pageobjectmodel;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -23,24 +23,42 @@ public class ProductCartPage {
 		@CacheLookup
 		WebElement cartbutton;
 		
+		@FindBy(xpath="//*[@id=\"nav-logo\"]/a[1]/span[1]")
+		@CacheLookup
+		WebElement icon;
+		
+		@FindBy(id="a-autoid-0-announce")
+		@CacheLookup
+		WebElement quantitybutton;
+		
 		public void testCart(String searchKey) {
-
-		System.out.println("Title of current page :" + driver.getTitle());
-		addtocartbutton.click();
-		System.out.println("product added to cart");
+			
+		//icon.click();
+		System.out.println("\n----Testing Cart----\n");
 		cartbutton.click();
-
+		
 		Assert.assertEquals(driver.getTitle(), "Amazon.in Shopping Cart");
 
 		String statement = driver.findElement(By.linkText(searchKey)).getText();
 
-		Assert.assertEquals(statement, searchKey); // asserting for cart if prod is not there in cart it will fail
+		Assert.assertEquals(statement, searchKey);    // asserting for cart if prod is not there in cart it will fail
 
 		if (statement.equals(searchKey)) {
-			System.out.println("Assert is successful");
+			System.out.println("\nTest cart is successful\n");
+		}
+		
+		String b = quantitybutton.getText();
+		int button = Integer.parseInt(b);
+		
+		if(button>1) {
+			
+			System.out.println("Product quanity is increased to "+button);
+		}
+		else {
+			System.out.println("Cart Prod is verified");
 		}
 
-		driver.close();
+		//driver.close();
 
 	}
 }

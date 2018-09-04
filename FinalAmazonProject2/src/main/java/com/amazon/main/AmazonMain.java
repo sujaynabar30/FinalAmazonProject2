@@ -1,4 +1,4 @@
-package com.amazon.testcases;
+package com.amazon.main;
 
 import java.io.IOException;
 
@@ -9,6 +9,13 @@ import org.testng.annotations.Test;
 
 import com.amazon.browserinit.BrowserFactory;
 import com.amazon.readfiles.ReadConfigfile;
+import com.amazon.testcases.DataproviderClass;
+import com.amazon.testcases.FilteringMouseHover;
+import com.amazon.testcases.VerifyAmazonLogin;
+import com.amazon.testcases.VerifyCartPage;
+import com.amazon.testcases.VerifyCartProducts;
+import com.amazon.testcases.VerifyProductDelete;
+import com.amazon.testcases.VerifyProductPage;
 import com.github.windpapi4j.InitializationFailedException;
 import com.github.windpapi4j.WinAPICallFailedException;
 
@@ -34,12 +41,26 @@ public class AmazonMain extends VerifyProductPage {
 		login.verifyValidLogin(r.getEmailId(), r.getPassword());
 	}
 
-	@Test(dependsOnMethods = { "verifylogin" }, dataProvider = "SearchProvider", dataProviderClass = DataproviderClass.class)
-	public void proudctPage(String key) throws InterruptedException {
+	@Test(dependsOnMethods= {"verifylogin"}, dataProvider = "SearchProvider", dataProviderClass = DataproviderClass.class)
+	//@Test(dataProvider = "SearchProvider", dataProviderClass = DataproviderClass.class)
+	public void searchproudctPage(String key) throws InterruptedException {
 		testProductPage(key, driver);
 	}
-
-	@Test(dependsOnMethods = { "proudctPage" })
+	
+	@Test(dependsOnMethods= {"searchproudctPage"} ,dataProvider = "SearchProvider", dataProviderClass = DataproviderClass.class)
+	public void cartPage(String key) {
+		
+		VerifyCartPage cart = new VerifyCartPage();
+		cart.testCartPage(driver, key);	
+	}
+	
+	/*@Test(dependsOnMethods= {"cartPage"})
+	public void getcartDetails() {
+		VerifyCartProducts cartprod = new VerifyCartProducts();
+		cartprod.getDetails(driver);
+	}
+*/
+	@Test(dependsOnMethods = { "cartPage" })
 	public void productDelete() {
 		VerifyProductDelete proddelcart = new VerifyProductDelete();
 		proddelcart.prodDelete(driver);

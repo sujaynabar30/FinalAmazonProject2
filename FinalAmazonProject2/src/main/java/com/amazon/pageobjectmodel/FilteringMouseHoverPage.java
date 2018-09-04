@@ -1,4 +1,4 @@
-package com.amazon.pages;
+package com.amazon.pageobjectmodel;
 
 import java.util.List;
 
@@ -91,7 +91,7 @@ public class FilteringMouseHoverPage {
 		System.out.println("checkbox 4 checked");
 		driver.navigate().refresh();
 		
-		minprice.sendKeys("10000");
+		minprice.sendKeys("10000");      //pass through data provider//////////////////////////
 		maxprice.sendKeys("20000");
 		
 		Actions builder = new Actions(driver);

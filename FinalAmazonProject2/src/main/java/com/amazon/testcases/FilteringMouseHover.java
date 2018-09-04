@@ -2,7 +2,8 @@ package com.amazon.testcases;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-import com.amazon.pages.FilteringMouseHoverPage;
+
+import com.amazon.pageobjectmodel.FilteringMouseHoverPage;
 
 /**
  * 

@@ -1,9 +1,10 @@
-package com.amazon.pages;
+package com.amazon.pageobjectmodel;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 
 public class ProductPage {
 	
@@ -21,9 +22,13 @@ public class ProductPage {
 	@CacheLookup
 	WebElement searchbutton;
 	
+	@FindBy(xpath="//*[@id=\"productTitle\"]")
+	@CacheLookup
+	WebElement productTitle;
+	
 	public void searchproduct(String searchKey) {
 		
-		System.out.println("dataprovided key is :"+searchKey);
+		System.out.println("Data-Provided Key is :"+searchKey);
 		searchbar.clear();
 		searchbar.sendKeys(searchKey);
 		searchbutton.click();

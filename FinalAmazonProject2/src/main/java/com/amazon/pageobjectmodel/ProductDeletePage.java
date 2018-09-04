@@ -1,4 +1,4 @@
-package com.amazon.pages;
+package com.amazon.pageobjectmodel;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -27,7 +27,7 @@ public class ProductDeletePage {
 	
 	public void productdelete()
 	{
-		cartbutton.click();
+		//cartbutton.click();
 		deletebutton.click();
 		System.out.println("product deleted");
 		icon.click();
