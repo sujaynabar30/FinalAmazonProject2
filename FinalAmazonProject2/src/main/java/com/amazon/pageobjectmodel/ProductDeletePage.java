@@ -29,7 +29,7 @@ public class ProductDeletePage {
 	{
 		//cartbutton.click();
 		deletebutton.click();
-		System.out.println("product deleted");
+		System.out.println("----Product Deleted----");
 		icon.click();
 	}
 }

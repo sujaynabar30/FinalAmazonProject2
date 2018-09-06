@@ -11,8 +11,15 @@ import com.amazon.pageobjectmodel.ProductDeletePage;
  *         class
  */
 public class VerifyProductDelete {
+	
+	WebDriver driver;	
 
-	public void prodDelete(WebDriver driver) {
+	public VerifyProductDelete(WebDriver driver) {
+		super();
+		this.driver = driver;
+	}
+
+	public void prodDelete() {
 		
 		ProductDeletePage productDelete_page = PageFactory.initElements(driver,ProductDeletePage.class);
 		productDelete_page.productdelete();

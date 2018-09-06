@@ -5,8 +5,12 @@
     <classes>
       <class name="com.amazon.main.AmazonMain">
         <methods>
+          <include name="beforeMethod"/>
+          <include name="productDelete"/>
           <include name="verifylogin"/>
+          <include name="mousehover"/>
           <include name="beforeTest"/>
+          <include name="afterMethod"/>
           <include name="afterTest"/>
           <include name="getcartDetails"/>
           <include name="searchproudctPage"/>

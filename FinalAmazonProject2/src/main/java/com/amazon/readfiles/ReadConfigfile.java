@@ -16,20 +16,27 @@ public class ReadConfigfile {
 
 	private Properties properties;
 	private final String propertyFilePath= "C:\\Users\\sujay_nabar\\git\\FinalAmazonProject2\\FinalAmazonProject2\\Configs\\Configuation.properties";
- 
-	
-	public ReadConfigfile(){
+
+	public ReadConfigfile()
+	{
 		BufferedReader reader;
-		try {
+		try 
+		{
 			reader = new BufferedReader(new FileReader(propertyFilePath));
 			properties = new Properties();
-			try {
+			
+			try
+			{
 				properties.load(reader);
 				reader.close();
-			} catch (IOException e) {
+			} 
+			catch (IOException e) 
+			{
 				e.printStackTrace();
 			}
-		} catch (FileNotFoundException e) {
+		}
+		catch (FileNotFoundException e) 
+		{
 			e.printStackTrace();
 			throw new RuntimeException("Configuration.properties not found at " + propertyFilePath);
 		}		

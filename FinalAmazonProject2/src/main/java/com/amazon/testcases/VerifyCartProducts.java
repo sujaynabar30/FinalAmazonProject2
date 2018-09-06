@@ -14,7 +14,16 @@ import com.amazon.pageobjectmodel.GetCartProductDetails;
 
 public class VerifyCartProducts {
 	
-	public void getDetails(WebDriver driver) {
+	WebDriver driver;
+	
+	
+	public VerifyCartProducts(WebDriver driver) {
+		super();
+		this.driver = driver;
+	}
+
+
+	public void getDetails() {
 		
 		GetCartProductDetails test_cart_prod = PageFactory.initElements(driver, GetCartProductDetails.class);
 		test_cart_prod.getDetailsFromCart();

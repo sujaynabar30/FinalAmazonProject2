@@ -9,6 +9,7 @@ import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 
 public class FilteringMouseHoverPage {
 	
@@ -70,29 +71,29 @@ public class FilteringMouseHoverPage {
 	@CacheLookup
 	WebElement clickele;
 	
-	public void sortMouseHover() {
+	public void sortMouseHover(String min, String max, String key, String Title) {
 		
-		searchbox.sendKeys("mobiles");
+		searchbox.sendKeys(key);
 		searchbutton.click();
 		
 		checkbox1.click();
-		System.out.println("checkbox 1 checked");
+		System.out.println("\n---checkbox 1 checked---");
 		driver.navigate().refresh();
 		
 		checkbox2.click();
-		System.out.println("checkbox 2 checked");
+		System.out.println("---checkbox 2 checked---");
 		driver.navigate().refresh();
 		
 		checkbox3.click();
-		System.out.println("checkbox 3 checked");
+		System.out.println("---checkbox 3 checked---");
 		driver.navigate().refresh();
 		
 		checkbox4.click();
-		System.out.println("checkbox 4 checked");
+		System.out.println("---checkbox 4 checked---");
 		driver.navigate().refresh();
 		
-		minprice.sendKeys("10000");      //pass through data provider//////////////////////////
-		maxprice.sendKeys("20000");
+		minprice.sendKeys(min);     
+		maxprice.sendKeys(max);
 		
 		Actions builder = new Actions(driver);
 		Action mouseOverHome = builder.click(gobutton).build();
@@ -112,7 +113,16 @@ public class FilteringMouseHoverPage {
 		builder.moveToElement(hoverTabslink).build().perform();
 		
 		clickele.click();
-		System.out.println("\nHover overtabs is successful");	
+		
+		Assert.assertEquals(driver.getTitle(), Title);
+		
+		if(driver.getTitle().equals(Title))
+		{
+			System.out.println("\n---Hover overtabs is successful---");	
+		}
+		else {
+			System.out.println("\nHover overtabs is Failed!!!");
+		}
 
 	}
 }

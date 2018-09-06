@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.testng.Assert;
 
 /**
  * 
@@ -20,6 +22,7 @@ public class LoginPage {
 		this.driver = localdriver;
 	}
 	
+	//@FindBy(how=How.ID,using="ap_email")		//like this also we can use
 	@FindBy(id="ap_email")
 	@CacheLookup
 	WebElement email;
@@ -40,7 +43,7 @@ public class LoginPage {
 	@CacheLookup
 	WebElement ContinueButton;
 	
-	public void loginToAmazon(String emailid, String pass)
+	public void loginToAmazon(String emailid, String pass)			//this function is used to login to the amazon
 	{
 		AmazonCart.click();
 		email.sendKeys(emailid);

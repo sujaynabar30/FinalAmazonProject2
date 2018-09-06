@@ -1,21 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="183232" started-at="2018-09-04T11:48:30Z" finished-at="2018-09-04T11:51:33Z">
+  <suite name="Default suite" duration-ms="195882" started-at="2018-09-06T12:25:53Z" finished-at="2018-09-06T12:29:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="183232" started-at="2018-09-04T11:48:30Z" finished-at="2018-09-04T11:51:33Z">
+    <test name="Default test" duration-ms="195882" started-at="2018-09-06T12:25:53Z" finished-at="2018-09-06T12:29:09Z">
       <class name="com.amazon.main.AmazonMain">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="beforeTest" is-config="true" duration-ms="53368" started-at="2018-09-04T11:48:30Z" finished-at="2018-09-04T11:49:24Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.amazon.main.AmazonMain@4883b407]" name="beforeTest" is-config="true" duration-ms="47549" started-at="2018-09-06T12:25:53Z" finished-at="2018-09-06T12:26:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="verifylogin()[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="verifylogin" duration-ms="25229" started-at="2018-09-04T11:49:24Z" finished-at="2018-09-04T11:49:49Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.main.AmazonMain@4883b407]" name="beforeMethod" is-config="true" duration-ms="150" started-at="2018-09-06T12:26:41Z" finished-at="2018-09-06T12:26:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifylogin()[pri:0, instance:com.amazon.main.AmazonMain@4883b407]" name="verifylogin" duration-ms="16214" started-at="2018-09-06T12:26:41Z" finished-at="2018-09-06T12:26:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifylogin -->
-        <test-method status="PASS" signature="searchproudctPage(java.lang.String)[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="searchproudctPage" duration-ms="40332" started-at="2018-09-04T11:49:49Z" data-provider="SearchProvider" depends-on-methods="com.amazon.main.AmazonMain.verifylogin" finished-at="2018-09-04T11:50:29Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.amazon.main.AmazonMain@4883b407]" name="afterMethod" is-config="true" duration-ms="276" started-at="2018-09-06T12:26:57Z" finished-at="2018-09-06T12:26:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifylogin status=SUCCESS method=AmazonMain.verifylogin()[pri:0, instance:com.amazon.main.AmazonMain@4883b407] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.main.AmazonMain@4883b407]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-09-06T12:26:57Z" finished-at="2018-09-06T12:26:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="searchproudctPage(java.lang.String)[pri:0, instance:com.amazon.main.AmazonMain@4883b407]" name="searchproudctPage" duration-ms="41409" started-at="2018-09-06T12:26:57Z" data-provider="SearchProvider" depends-on-methods="com.amazon.main.AmazonMain.verifylogin" finished-at="2018-09-06T12:27:39Z">
           <params>
             <param index="0">
               <value>
@@ -26,7 +45,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchproudctPage -->
-        <test-method status="PASS" signature="searchproudctPage(java.lang.String)[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="searchproudctPage" duration-ms="17954" started-at="2018-09-04T11:50:29Z" data-provider="SearchProvider" depends-on-methods="com.amazon.main.AmazonMain.verifylogin" finished-at="2018-09-04T11:50:47Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.amazon.main.AmazonMain@4883b407]" name="afterMethod" is-config="true" duration-ms="93" started-at="2018-09-06T12:27:39Z" finished-at="2018-09-06T12:27:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchproudctPage status=SUCCESS method=AmazonMain.searchproudctPage(java.lang.String)[pri:0, instance:com.amazon.main.AmazonMain@4883b407] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.main.AmazonMain@4883b407]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-09-06T12:27:39Z" finished-at="2018-09-06T12:27:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="searchproudctPage(java.lang.String)[pri:0, instance:com.amazon.main.AmazonMain@4883b407]" name="searchproudctPage" duration-ms="14031" started-at="2018-09-06T12:27:39Z" data-provider="SearchProvider" depends-on-methods="com.amazon.main.AmazonMain.verifylogin" finished-at="2018-09-06T12:27:53Z">
           <params>
             <param index="0">
               <value>
@@ -37,7 +71,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchproudctPage -->
-        <test-method status="PASS" signature="cartPage(java.lang.String)[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="cartPage" duration-ms="3853" started-at="2018-09-04T11:50:47Z" data-provider="SearchProvider" depends-on-methods="com.amazon.main.AmazonMain.searchproudctPage" finished-at="2018-09-04T11:50:51Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.amazon.main.AmazonMain@4883b407]" name="afterMethod" is-config="true" duration-ms="85" started-at="2018-09-06T12:27:53Z" finished-at="2018-09-06T12:27:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchproudctPage status=SUCCESS method=AmazonMain.searchproudctPage(java.lang.String)[pri:0, instance:com.amazon.main.AmazonMain@4883b407] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.main.AmazonMain@4883b407]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-06T12:27:53Z" finished-at="2018-09-06T12:27:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="cartPage(java.lang.String)[pri:0, instance:com.amazon.main.AmazonMain@4883b407]" name="cartPage" duration-ms="2558" started-at="2018-09-06T12:27:53Z" data-provider="SearchProvider" depends-on-methods="com.amazon.main.AmazonMain.searchproudctPage" finished-at="2018-09-06T12:27:55Z">
           <params>
             <param index="0">
               <value>
@@ -48,7 +97,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cartPage -->
-        <test-method status="PASS" signature="cartPage(java.lang.String)[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="cartPage" duration-ms="3320" started-at="2018-09-04T11:50:51Z" data-provider="SearchProvider" depends-on-methods="com.amazon.main.AmazonMain.searchproudctPage" finished-at="2018-09-04T11:50:54Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.amazon.main.AmazonMain@4883b407]" name="afterMethod" is-config="true" duration-ms="57" started-at="2018-09-06T12:27:55Z" finished-at="2018-09-06T12:27:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cartPage status=SUCCESS method=AmazonMain.cartPage(java.lang.String)[pri:0, instance:com.amazon.main.AmazonMain@4883b407] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.main.AmazonMain@4883b407]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-09-06T12:27:56Z" finished-at="2018-09-06T12:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="cartPage(java.lang.String)[pri:0, instance:com.amazon.main.AmazonMain@4883b407]" name="cartPage" duration-ms="3425" started-at="2018-09-06T12:27:56Z" data-provider="SearchProvider" depends-on-methods="com.amazon.main.AmazonMain.searchproudctPage" finished-at="2018-09-06T12:27:59Z">
           <params>
             <param index="0">
               <value>
@@ -59,15 +123,97 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cartPage -->
-        <test-method status="PASS" signature="productDelete()[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="productDelete" duration-ms="9129" started-at="2018-09-04T11:50:54Z" depends-on-methods="com.amazon.main.AmazonMain.cartPage" finished-at="2018-09-04T11:51:03Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.amazon.main.AmazonMain@4883b407]" name="afterMethod" is-config="true" duration-ms="28" started-at="2018-09-06T12:27:59Z" finished-at="2018-09-06T12:27:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cartPage status=SUCCESS method=AmazonMain.cartPage(java.lang.String)[pri:0, instance:com.amazon.main.AmazonMain@4883b407] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.main.AmazonMain@4883b407]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-06T12:27:59Z" finished-at="2018-09-06T12:27:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="getcartDetails()[pri:0, instance:com.amazon.main.AmazonMain@4883b407]" name="getcartDetails" duration-ms="2775" started-at="2018-09-06T12:27:59Z" depends-on-methods="com.amazon.main.AmazonMain.cartPage" finished-at="2018-09-06T12:28:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getcartDetails -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.amazon.main.AmazonMain@4883b407]" name="afterMethod" is-config="true" duration-ms="35" started-at="2018-09-06T12:28:02Z" finished-at="2018-09-06T12:28:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getcartDetails status=SUCCESS method=AmazonMain.getcartDetails()[pri:0, instance:com.amazon.main.AmazonMain@4883b407] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.main.AmazonMain@4883b407]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-09-06T12:28:02Z" finished-at="2018-09-06T12:28:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="productDelete()[pri:0, instance:com.amazon.main.AmazonMain@4883b407]" name="productDelete" duration-ms="8234" started-at="2018-09-06T12:28:02Z" depends-on-methods="com.amazon.main.AmazonMain.getcartDetails" finished-at="2018-09-06T12:28:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productDelete -->
-        <test-method status="PASS" signature="mousehover()[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="mousehover" duration-ms="29291" started-at="2018-09-04T11:51:03Z" depends-on-methods="com.amazon.main.AmazonMain.productDelete" finished-at="2018-09-04T11:51:33Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.amazon.main.AmazonMain@4883b407]" name="afterMethod" is-config="true" duration-ms="53" started-at="2018-09-06T12:28:10Z" finished-at="2018-09-06T12:28:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=productDelete status=SUCCESS method=AmazonMain.productDelete()[pri:0, instance:com.amazon.main.AmazonMain@4883b407] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.main.AmazonMain@4883b407]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2018-09-06T12:28:10Z" finished-at="2018-09-06T12:28:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="mousehover(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amazon.main.AmazonMain@4883b407]" name="mousehover" duration-ms="58029" started-at="2018-09-06T12:28:10Z" data-provider="ValueProvider" depends-on-methods="com.amazon.main.AmazonMain.productDelete" finished-at="2018-09-06T12:29:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[20000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mobiles]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Mobile Accessories: Buy Mobile Accessories online at best prices in India - Amazon.in]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mousehover -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="afterTest" is-config="true" duration-ms="710" started-at="2018-09-04T11:51:33Z" finished-at="2018-09-04T11:51:33Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.amazon.main.AmazonMain@4883b407]" name="afterMethod" is-config="true" duration-ms="56" started-at="2018-09-06T12:29:08Z" finished-at="2018-09-06T12:29:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=mousehover status=SUCCESS method=AmazonMain.mousehover(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amazon.main.AmazonMain@4883b407] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.amazon.main.AmazonMain@4883b407]" name="afterTest" is-config="true" duration-ms="781" started-at="2018-09-06T12:29:08Z" finished-at="2018-09-06T12:29:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

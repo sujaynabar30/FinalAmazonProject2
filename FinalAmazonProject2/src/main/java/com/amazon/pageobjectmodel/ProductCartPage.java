@@ -52,10 +52,10 @@ public class ProductCartPage {
 		
 		if(button>1) {
 			
-			System.out.println("Product quanity is increased to "+button);
+			System.out.println("\nProduct Added and quanity is increased to "+button);
 		}
 		else {
-			System.out.println("Cart Prod is verified");
+			System.out.println("\nCart Prod is verified");
 		}
 
 		//driver.close();

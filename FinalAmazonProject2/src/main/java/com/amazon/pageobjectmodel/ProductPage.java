@@ -28,7 +28,7 @@ public class ProductPage {
 	
 	public void searchproduct(String searchKey) {
 		
-		System.out.println("Data-Provided Key is :"+searchKey);
+		System.out.println("\nData-Provided Key is :"+searchKey);
 		searchbar.clear();
 		searchbar.sendKeys(searchKey);
 		searchbutton.click();

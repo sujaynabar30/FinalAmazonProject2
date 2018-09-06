@@ -15,13 +15,20 @@ import com.amazon.windowhandle.VerifyWindowHandling;
  */
 public class VerifyProductPage {
 	
-	public void testProductPage(String searchKey,WebDriver driver) {
+	WebDriver driver;
+
+	public VerifyProductPage(WebDriver driver) {
+		super();
+		this.driver = driver;
+	}
+	
+	public void testProductPage(String searchKey) {
 					
 			ProductPage product_page = PageFactory.initElements(driver, ProductPage.class); //goes to search prod page
 			product_page.searchproduct(searchKey);
 		
 			String MainWindow = driver.getWindowHandle();								//get current id of window
-			System.out.println("\nMainwindow :"+MainWindow);
+			//System.out.println("\nMainwindow :"+MainWindow);
 			
 			driver.findElement(By.linkText(searchKey)).click();	
 			

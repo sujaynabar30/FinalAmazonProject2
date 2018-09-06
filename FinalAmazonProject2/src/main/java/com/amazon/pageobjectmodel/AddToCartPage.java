@@ -28,16 +28,16 @@ public class AddToCartPage {
 		
 		public void addtoCart() {
 			
-			System.out.println("Title of current page :" + driver.getTitle());
+			System.out.println("\nTitle of current page :" + driver.getTitle());
 			addtocartbutton.click();
 			String prodtext = productadded.getText();
-			System.out.println(prodtext);
+			//System.out.println(prodtext);
 			
 			Assert.assertEquals(prodtext, "Added to Cart");
 			
 			if(prodtext.equals("Added to Cart"))
 			{
-				System.out.println("----Product Added Successfully----");
+				System.out.println("\n----Product Added Successfully----");
 			}
 			else {
 				System.out.println("!!!Adding Product to cart failed");

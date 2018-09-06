@@ -20,10 +20,10 @@ public class FilteringMouseHover {
 		this.driver = driver;
 	}
 
-	public void filterMouseHover() {
+	public void filterMouseHover(String Min, String Max, String SearchKey, String Title) {
 
 		FilteringMouseHoverPage filtermousehover_page = PageFactory.initElements(driver, FilteringMouseHoverPage.class);
-		filtermousehover_page.sortMouseHover();
+		filtermousehover_page.sortMouseHover(Min,Max,SearchKey,Title);
 
 	}
 }
