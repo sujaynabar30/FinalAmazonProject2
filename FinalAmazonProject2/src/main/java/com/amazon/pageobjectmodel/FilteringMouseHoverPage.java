@@ -39,6 +39,7 @@ public class FilteringMouseHoverPage {
 	@CacheLookup
 	WebElement checkbox3;
 	
+	//@FindBy(xpath="(//INPUT[@type='checkbox'])[41]")
 	@FindBy(name="s-ref-checkbox-Motorola")
 	@CacheLookup
 	WebElement checkbox4;
@@ -51,7 +52,8 @@ public class FilteringMouseHoverPage {
 	@CacheLookup
 	WebElement maxprice;
 	
-	@FindBy(xpath="//*[@id=\"a-autoid-4\"]/span/input")
+	//@FindBy(xpath="//*[@id=\"a-autoid-4\"]/span/input")
+	@FindBy(xpath="(//INPUT[@class='a-button-input'])[4]")
 	@CacheLookup
 	WebElement gobutton;
 	

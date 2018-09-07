@@ -40,7 +40,7 @@ public class AmazonMain {
 	public WebDriver driver;
 	ReadConfigfile r = new ReadConfigfile();
 	
-	@BeforeMethod											//before each testmethod this is executed 
+	@BeforeMethod											//before each test-method this is executed 
 	public void beforeMethod(){
 		
 		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("./Reports/AmazonReport.html");
@@ -86,6 +86,7 @@ public class AmazonMain {
 		VerifyProductDelete proddelcart = new VerifyProductDelete(driver);
 		proddelcart.prodDelete();
 	}
+	
 			//this function search any prod and filter them, get list of prod and mouseHover the categories button 
 	@Test(dependsOnMethods = {"productDelete"}, dataProvider = "ValueProvider", dataProviderClass = DataproviderClass.class)
 	public void mousehover(String min, String max, String searchkey, String Title) {
