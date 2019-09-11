@@ -35,7 +35,7 @@ public class LoginPage {
 	@CacheLookup
 	WebElement signin;
 	
-	@FindBy(id="nav-link-yourAccount")
+	@FindBy(id="nav-link-accountList")
 	@CacheLookup
 	WebElement AmazonCart;
 	

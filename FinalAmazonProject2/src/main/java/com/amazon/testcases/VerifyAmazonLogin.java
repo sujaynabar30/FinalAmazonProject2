@@ -34,7 +34,7 @@ public class VerifyAmazonLogin {
 																					
 		login_page.loginToAmazon(username, pass); 				  // call the method (this will call all the login elements)
 
-		WebElement verify = driver.findElement(By.xpath("//*[@id=\"nav-link-yourAccount\"]/span[1]"));
+		WebElement verify = driver.findElement(By.xpath("//*[@id=\"nav-link-accountList\"]/span[1]"));
 		String check = verify.getText();											//get text of the sign in username
 		
 		Assert.assertEquals(check, "Hello, NABAR");

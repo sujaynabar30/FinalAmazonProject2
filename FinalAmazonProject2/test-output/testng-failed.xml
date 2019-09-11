@@ -14,7 +14,7 @@
           <include name="afterTest"/>
           <include name="getcartDetails"/>
           <include name="searchproudctPage"/>
-          <include name="cartPage"/>
+          <include name="cartPage" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- com.amazon.main.AmazonMain -->
     </classes>
