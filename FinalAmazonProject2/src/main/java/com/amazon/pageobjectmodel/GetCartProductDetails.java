@@ -28,10 +28,10 @@ public class GetCartProductDetails {
 		
 		cartbutton.click();
 		
-		List<WebElement> links = driver.findElements(By.cssSelector("a.a-link-normal.sc-product-link"));
-		//System.out.println(links);
+		List<WebElement> links = driver.findElements(By.className("a-link-normal sc-product-link"));
+		System.out.println(links);
 		
-		//System.out.println("\nTotal number of product found in cart are :" + links.size() + "\n"); // get the count
+		System.out.println("\nTotal number of product found in cart are :" + links.size() + "\n"); // get the count
 
 		for (int i = 1; i < links.size(); i = i + 1) {
 			System.out.println(links.get(i).getText());            // get the product link names till the count

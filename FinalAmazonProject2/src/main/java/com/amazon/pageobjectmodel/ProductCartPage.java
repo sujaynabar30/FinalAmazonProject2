@@ -27,7 +27,8 @@ public class ProductCartPage {
 		@CacheLookup
 		WebElement icon;
 		
-		@FindBy(id="a-autoid-0-announce")
+		//@FindBy(id="a-autoid-0-announce")
+		@FindBy(className="a-dropdown-prompt")
 		@CacheLookup
 		WebElement quantitybutton;
 		
