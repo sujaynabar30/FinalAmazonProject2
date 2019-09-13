@@ -61,7 +61,7 @@ public class AmazonMain {
 		VerifyAmazonLogin login = new VerifyAmazonLogin(driver);
 		login.verifyValidLogin(r.getEmailId(), r.getPassword());
 	}
-									//this function is used to search the product and add it into the cart
+		/*							//this function is used to search the product and add it into the cart
 	@Test(dependsOnMethods= {"verifylogin"}, dataProvider = "SearchProvider", dataProviderClass = DataproviderClass.class)
 	public void searchproudctPage(String key) throws InterruptedException {
 		 VerifyProductPage testprodpage = new VerifyProductPage(driver);
@@ -85,10 +85,10 @@ public class AmazonMain {
 	public void productDelete() {
 		VerifyProductDelete proddelcart = new VerifyProductDelete(driver);
 		proddelcart.prodDelete();
-	}
+	} */
 	
 			//this function search any prod and filter them, get list of prod and mouseHover the categories button 
-	@Test(dependsOnMethods = {"productDelete"}, dataProvider = "ValueProvider", dataProviderClass = DataproviderClass.class)
+	@Test(dependsOnMethods = {"verifylogin"}, dataProvider = "ValueProvider", dataProviderClass = DataproviderClass.class)
 	public void mousehover(String min, String max, String searchkey, String Title) {
 		
 		FilteringMouseHover mouse = new FilteringMouseHover(driver);

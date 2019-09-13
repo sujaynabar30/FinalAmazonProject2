@@ -27,20 +27,24 @@ public class FilteringMouseHoverPage {
 	@CacheLookup
 	WebElement searchbutton;
 	
-	@FindBy(name="s-ref-checkbox-10440599031")
+	//@FindBy(name="s-ref-checkbox-10440599031")
+	@FindBy(xpath="//*[@id=\"p_n_operating_system_browse-bin/1485077031\"]/span/a/div/label/i")
 	@CacheLookup
 	WebElement checkbox1;
 	
-	@FindBy(name="s-ref-checkbox-4931671031")
+	//@FindBy(name="s-ref-checkbox-4931671031")
+	@FindBy(xpath="//*[@id=\"p_89/Motorola\"]/span/a/div/label/i")
 	@CacheLookup
 	WebElement checkbox2;
 	
-	@FindBy(name="s-ref-checkbox-1898707031")
+	//@FindBy(name="s-ref-checkbox-1898707031")
+	@FindBy(xpath="//*[@id=\"p_n_feature_five_browse-bin/8561106031\"]/span/a/div/label/i")
 	@CacheLookup
 	WebElement checkbox3;
 	
 	//@FindBy(xpath="(//INPUT[@type='checkbox'])[41]")
-	@FindBy(name="s-ref-checkbox-Motorola")
+	//@FindBy(name="s-ref-checkbox-Motorola")	
+	@FindBy(xpath="//*[@id=\"p_n_feature_two_browse-bin/1898707031\"]/span/a/div/label/i")
 	@CacheLookup
 	WebElement checkbox4;
 	
@@ -53,7 +57,7 @@ public class FilteringMouseHoverPage {
 	WebElement maxprice;
 	
 	//@FindBy(xpath="//*[@id=\"a-autoid-4\"]/span/input")
-	@FindBy(xpath="(//INPUT[@class='a-button-input'])[4]")
+	@FindBy(xpath="//*[@id=\"a-autoid-1\"]/span/input")
 	@CacheLookup
 	WebElement gobutton;
 	

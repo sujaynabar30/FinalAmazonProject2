@@ -18,7 +18,7 @@ public class ProductDeletePage {
 	WebElement cartbutton;
 	
 	//@FindBy(xpath="//*[@id=\"activeCartViewForm\"]/div[2]/div[2]/div[4]/div[2]/div[1]/div/div/div[2]/div/span[1]/span/input")
-	@FindBy(xpath="//*[@id=\"sc-item-Cec2638dc-7b7a-4743-9319-c5617bee4660\"]/div[4]/div/div[1]/div/div/div[2]/div/span[2]/span/input")
+	@FindBy(xpath="//*[@id=\"sc-item-Cdbb753a9-d85b-40aa-8a84-eeb7e8f5b3a2\"]/div[4]/div/div[1]/div/div/div[2]/div/span[2]/span/input")
 	@CacheLookup
 	WebElement deletebutton;
 	

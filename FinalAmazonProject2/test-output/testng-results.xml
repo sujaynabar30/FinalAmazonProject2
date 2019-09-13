@@ -1,185 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="1" ignored="0" total="8" passed="6">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1328519" started-at="2019-09-12T10:49:47Z" finished-at="2019-09-12T11:11:56Z">
+  <suite name="Default suite" duration-ms="109426" started-at="2019-09-13T10:54:10Z" finished-at="2019-09-13T10:55:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1328519" started-at="2019-09-12T10:49:47Z" finished-at="2019-09-12T11:11:56Z">
+    <test name="Default test" duration-ms="109426" started-at="2019-09-13T10:54:10Z" finished-at="2019-09-13T10:55:59Z">
       <class name="com.amazon.main.AmazonMain">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="beforeTest" is-config="true" duration-ms="83735" started-at="2019-09-12T10:49:47Z" finished-at="2019-09-12T10:51:11Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.amazon.main.AmazonMain@5622fdf]" name="beforeTest" is-config="true" duration-ms="83350" started-at="2019-09-13T10:54:10Z" finished-at="2019-09-13T10:55:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="beforeMethod" is-config="true" duration-ms="175" started-at="2019-09-12T10:51:11Z" finished-at="2019-09-12T10:51:11Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.main.AmazonMain@5622fdf]" name="beforeMethod" is-config="true" duration-ms="191" started-at="2019-09-13T10:55:33Z" finished-at="2019-09-13T10:55:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifylogin()[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="verifylogin" duration-ms="6368" started-at="2019-09-12T10:51:11Z" finished-at="2019-09-12T10:51:18Z">
+        <test-method status="PASS" signature="verifylogin()[pri:0, instance:com.amazon.main.AmazonMain@5622fdf]" name="verifylogin" duration-ms="6221" started-at="2019-09-13T10:55:34Z" finished-at="2019-09-13T10:55:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifylogin -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="afterMethod" is-config="true" duration-ms="522" started-at="2019-09-12T10:51:18Z" finished-at="2019-09-12T10:51:18Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.amazon.main.AmazonMain@5622fdf]" name="afterMethod" is-config="true" duration-ms="662" started-at="2019-09-13T10:55:40Z" finished-at="2019-09-13T10:55:40Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifylogin status=SUCCESS method=AmazonMain.verifylogin()[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0] output={null}]]]>
+                <![CDATA[[TestResult name=verifylogin status=SUCCESS method=AmazonMain.verifylogin()[pri:0, instance:com.amazon.main.AmazonMain@5622fdf] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-09-12T10:51:18Z" finished-at="2019-09-12T10:51:18Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.main.AmazonMain@5622fdf]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-09-13T10:55:40Z" finished-at="2019-09-13T10:55:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="searchproudctPage(java.lang.String)[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="searchproudctPage" duration-ms="13025" started-at="2019-09-12T10:51:18Z" data-provider="SearchProvider" depends-on-methods="com.amazon.main.AmazonMain.verifylogin" finished-at="2019-09-12T10:51:31Z">
+        <test-method status="FAIL" signature="mousehover(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amazon.main.AmazonMain@5622fdf]" name="mousehover" duration-ms="16739" started-at="2019-09-13T10:55:40Z" data-provider="ValueProvider" depends-on-methods="com.amazon.main.AmazonMain.verifylogin" finished-at="2019-09-13T10:55:57Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Three Thousand Stitches: Ordinary People, Extraordinary Lives]]>
+                <![CDATA[10000]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchproudctPage -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="afterMethod" is-config="true" duration-ms="85" started-at="2019-09-12T10:51:31Z" finished-at="2019-09-12T10:51:31Z">
-          <params>
-            <param index="0">
+            <param index="1">
               <value>
-                <![CDATA[[TestResult name=searchproudctPage status=SUCCESS method=AmazonMain.searchproudctPage(java.lang.String)[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0] output={null}]]]>
+                <![CDATA[20000]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-09-12T10:51:31Z" finished-at="2019-09-12T10:51:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="searchproudctPage(java.lang.String)[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="searchproudctPage" duration-ms="13557" started-at="2019-09-12T10:51:31Z" data-provider="SearchProvider" depends-on-methods="com.amazon.main.AmazonMain.verifylogin" finished-at="2019-09-12T10:51:45Z">
-          <params>
-            <param index="0">
+            <param index="2">
               <value>
-                <![CDATA[The Dhoni Touch: Unravelling the Enigma That Is Mahendra Singh Dhoni]]>
+                <![CDATA[mobiles]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchproudctPage -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="afterMethod" is-config="true" duration-ms="78" started-at="2019-09-12T10:51:45Z" finished-at="2019-09-12T10:51:45Z">
-          <params>
-            <param index="0">
+            <param index="3">
               <value>
-                <![CDATA[[TestResult name=searchproudctPage status=SUCCESS method=AmazonMain.searchproudctPage(java.lang.String)[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0] output={null}]]]>
+                <![CDATA[Mobile Accessories: Buy Mobile Accessories online at best prices in India - Amazon.in]]>
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2019-09-12T10:51:45Z" finished-at="2019-09-12T10:51:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="cartPage(java.lang.String)[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="cartPage" duration-ms="3035" started-at="2019-09-12T10:51:45Z" data-provider="SearchProvider" depends-on-methods="com.amazon.main.AmazonMain.searchproudctPage" finished-at="2019-09-12T10:51:48Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Three Thousand Stitches: Ordinary People, Extraordinary Lives]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cartPage -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="afterMethod" is-config="true" duration-ms="60" started-at="2019-09-12T10:51:48Z" finished-at="2019-09-12T10:51:48Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=cartPage status=SUCCESS method=AmazonMain.cartPage(java.lang.String)[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-09-12T10:51:48Z" finished-at="2019-09-12T10:51:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="cartPage(java.lang.String)[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="cartPage" duration-ms="2913" started-at="2019-09-12T10:51:48Z" data-provider="SearchProvider" depends-on-methods="com.amazon.main.AmazonMain.searchproudctPage" finished-at="2019-09-12T10:51:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[The Dhoni Touch: Unravelling the Enigma That Is Mahendra Singh Dhoni]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cartPage -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="afterMethod" is-config="true" duration-ms="101" started-at="2019-09-12T10:51:51Z" finished-at="2019-09-12T10:51:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=cartPage status=SUCCESS method=AmazonMain.cartPage(java.lang.String)[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-09-12T10:51:51Z" finished-at="2019-09-12T10:51:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="getcartDetails()[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="getcartDetails" duration-ms="602482" started-at="2019-09-12T10:51:51Z" depends-on-methods="com.amazon.main.AmazonMain.cartPage" finished-at="2019-09-12T11:01:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getcartDetails -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="afterMethod" is-config="true" duration-ms="42" started-at="2019-09-12T11:01:53Z" finished-at="2019-09-12T11:01:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=getcartDetails status=SUCCESS method=AmazonMain.getcartDetails()[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="beforeMethod" is-config="true" duration-ms="3" started-at="2019-09-12T11:01:53Z" finished-at="2019-09-12T11:01:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="productDelete()[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="productDelete" duration-ms="600086" started-at="2019-09-12T11:01:53Z" depends-on-methods="com.amazon.main.AmazonMain.getcartDetails" finished-at="2019-09-12T11:11:54Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="activeCartViewForm"]/div[2]/div[2]/div[4]/div[2]/div[1]/div/div/div[2]/div/span[1]/span/input"}
+              <![CDATA[element click intercepted: Element <i class="a-icon a-icon-checkbox"></i> is not clickable at point (32, 720). Other element would receive the click: <i class="a-icon a-icon-checkbox"></i>
   (Session info: chrome=77.0.3865.75)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'GOD11259', ip: '10.244.49.255', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\SUJAY_~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57182}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: d42cb891ee80df5539de3af05176dc26
-*** Element info: {Using=xpath, value=//*[@id="activeCartViewForm"]/div[2]/div[2]/div[4]/div[2]/div[1]/div/div/div[2]/div/span[1]/span/input}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\SUJAY_~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56374}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b8a2b15f47e9ea22ea5ca12d41305880]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="activeCartViewForm"]/div[2]/div[2]/div[4]/div[2]/div[1]/div/div/div[2]/div/span[1]/span/input"}
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i class="a-icon a-icon-checkbox"></i> is not clickable at point (32, 720). Other element would receive the click: <i class="a-icon a-icon-checkbox"></i>
   (Session info: chrome=77.0.3865.75)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'GOD11259', ip: '10.244.49.255', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\SUJAY_~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57182}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: d42cb891ee80df5539de3af05176dc26
-*** Element info: {Using=xpath, value=//*[@id="activeCartViewForm"]/div[2]/div[2]/div[4]/div[2]/div[1]/div/div/div[2]/div/span[1]/span/input}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\SUJAY_~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56374}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b8a2b15f47e9ea22ea5ca12d41305880
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -190,16 +85,17 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 at com.sun.proxy.$Proxy12.click(Unknown Source)
-at com.amazon.pageobjectmodel.ProductDeletePage.productdelete(ProductDeletePage.java:31)
-at com.amazon.testcases.VerifyProductDelete.prodDelete(VerifyProductDelete.java:25)
-at com.amazon.main.AmazonMain.productDelete(AmazonMain.java:87)
+at com.amazon.pageobjectmodel.FilteringMouseHoverPage.sortMouseHover(FilteringMouseHoverPage.java:93)
+at com.amazon.testcases.FilteringMouseHover.filterMouseHover(FilteringMouseHover.java:26)
+at com.amazon.main.AmazonMain.mousehover(AmazonMain.java:95)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -227,53 +123,22 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- productDelete -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="afterMethod" is-config="true" duration-ms="957" started-at="2019-09-12T11:11:54Z" finished-at="2019-09-12T11:11:55Z">
+        </test-method> <!-- mousehover -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.amazon.main.AmazonMain@5622fdf]" name="afterMethod" is-config="true" duration-ms="829" started-at="2019-09-13T10:55:57Z" finished-at="2019-09-13T10:55:58Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=productDelete status=FAILURE method=AmazonMain.productDelete()[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0] output={null}]]]>
+                <![CDATA[[TestResult name=mousehover status=FAILURE method=AmazonMain.mousehover(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amazon.main.AmazonMain@5622fdf] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="mousehover(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="mousehover" duration-ms="0" started-at="2019-09-12T11:11:55Z" data-provider="ValueProvider" depends-on-methods="com.amazon.main.AmazonMain.productDelete" finished-at="2019-09-12T11:11:55Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method AmazonMain.mousehover(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method AmazonMain.mousehover(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0] depends on not successfully finished methods
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mousehover -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.amazon.main.AmazonMain@604ed9f0]" name="afterTest" is-config="true" duration-ms="1235" started-at="2019-09-12T11:11:55Z" finished-at="2019-09-12T11:11:56Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.amazon.main.AmazonMain@5622fdf]" name="afterTest" is-config="true" duration-ms="1397" started-at="2019-09-13T10:55:58Z" finished-at="2019-09-13T10:55:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
